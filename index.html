@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>十一国庆、江湖再见</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="normalize.css" />
+        <link rel="stylesheet" type="text/css" href="main.css" />
+    </head>
+    <body>
+      <header id="top"><!-- 顶部固定栏start -->
+        <nav id="nav">
+            <ul>
+                <li><a href="#"></a></li>
+                <li><a href="#"><img src="images/943163143_469775367_1473748227_230_40.jpg">
+                <div id="nav_box"><img src="images/1603956335_488355056_1473748083_970_185.jpg"></div>
+                </a></li>
+                <li></li>
+            </ul>
+        </nav>
+      </header><!-- 顶部固定栏end -->
+      <section>
+        <div id="fixedma">
+            <p>关注微信了解更多咨询</p>
+            <img src="images/erweima_03.jpg" height="134" width="136" alt="" />
+            <a href="index/天涯明月刀.html" target="_blank">进入官网</a>
+            <a href="active/ty.html" target="_blank">十一活动</a>
+        </div>
+        <div id="enroll">
+            <a id="contentLogo" href="index/天涯明月刀.html" target="_blank"></a>
+            <div id="list">
+                <div id="part1">
+                    <p id="fontgq">
+                        <span>十一国庆 </span>/
+                        <span>江湖再见</span>
+                    </p>
+                    <div id="fontzm"></div>
+                    <div id="recruitmenting"></div>
+                    <h4>招募中...</h4>
+                    <p class="jshao">边城浪子大区服务器是对外限量开放的精英体验服，国庆期间限时开放，再次期间加入的玩家更有大礼相送我们欢迎各方新老玩家的加入！</p>
+                    <ul>
+                        <li><a href="index/天涯明月刀.html" target="_blank">进入官网</a></li>
+                        <li><a href="active/ty.html" target="_blank">国庆活动</a></li>
+                    </ul>
+                    <p class="jshao">活动时间：2016年9月23日—10月7日</p>
+                </div>
+                <div id="part2">
+                    <h1>查询资格</h1>
+                    <a href="index/天涯明月刀.html" target="_blank" class="m-btn jh-btn" onclick="">
+                        <span>查询精英资格<br />
+                            <em class="en">ACTIVATION</em>
+                        </span>
+                    </a>
+                    <h1>立即注册</h1>
+                    <a href="javascript:;" class="m-btn jh-btn" onclick="" id="register">
+                        <span>立即获取资格<br />
+                            <em class="en">ACTIVATION</em>
+                        </span>
+                    </a>
+                </div>
+                <div id="part3">
+                    <div class="wrapper">
+                        <div class="container">
+                            <h1>注册</h1>
+                            <form class="form">
+                                <input name="registerTxt" type="text" placeholder="用户名" onfocus="getFocus(this)" >
+                                <p>请输入10个字符以内的字母、数字或下划线</p>
+
+                                <input name="registerTxt" type="password" placeholder="密码" onfocus="getFocus(this)">
+                                <p>请输入6位数字</p>
+                                <input name="registerTxt" type="password" placeholder="请再次输入密码" onfocus="getFocus(this)" >
+                                <p>两次密码不一致</p>
+                                <button id="login-button" type="button">立即注册</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div id="part4">
+                    <p>
+                    注册成功
+                    </p>
+                </div>
+           </div>
+            <ul id="buttons">
+                <li index="0" class="on">
+                    01
+                    <p>精英招募</p>
+                </li>
+                <li index="1">
+                    02
+                    <p>查询资格</p>
+                </li>
+                <li index="2">
+                    03
+                    <p>立即注册</p>
+                </li>
+                <li index="3">
+                    04
+                    <p>江湖再见</p>
+                </li>
+            </ul>
+        </div>
+        <a href="javascript:;" id="lbtn"></a>
+        <a href="javascript:;" id="rbtn"></a>
+        <a href="active/ty.html" id="goodbye" target="_blank"><img  src="images/w2.png" height="123" width="341" alt="" /></a>
+        <div id="alertReg">
+          <div>
+            <p>请先完成注册</p>
+            <span onclick="times(this)">&times;</span>
+          </div>
+        </div>
+      </section>
+      <footer>
+              <div>
+                  <p>
+                      <a href="#" >互动娱乐</a>
+                      |
+                      <a href="#" >服务条款</a>
+                      |
+                      <a href="#" >广告服务</a>
+                      |
+                      <a href="#/" >游戏客服</a>
+                      |
+                      <a href="#" >游戏地图</a>
+                      |
+                      <a href="#" >游戏活动</a>
+                      |
+                      <a href="#" >商务合作</a>
+                      |
+                      <a href="#" >网站导航</a>
+                  </p>
+              <p class="e">COPYRIGHT &#169; 1998 – 2016 TENCENT. ALL RIGHTS RESERVED.</p>
+              <p><a href="#" >@fro.com 版权所有</a></p>
+              </div>
+      </footer>
+    <script type="text/javascript">
+        window.onload = function () {
+            var alertReg = document.getElementById("alertReg");
+            var login = document.getElementById("login-button");
+            var reg = document.getElementById("register");
+            var input = document.getElementsByTagName('input')
+            //console.log(input)
+            var back = document.getElementsByTagName('section')[0]
+            var enroll = document.getElementById('enroll');
+            var list = document.getElementById('list');
+            var buttons = document.getElementById('buttons').getElementsByTagName('li');
+            var lbtn = document.getElementById('lbtn');
+            var rbtn = document.getElementById('rbtn');
+            var index = 0;
+            function animate (offset) {
+                var left = Number(list.style.left.slice(0,-2)) + offset ;
+                if(left>0){
+                    list.style.left = 0+"px"
+                }else if(left<-1200){
+                    list.style.left = -1800+"px";
+                    //console.log(back);
+                    back.style.backgroundPosition="0 -850px";
+                    enroll.style.top="-850px";
+                    enroll.style.opacity=0;
+                    document.getElementById('goodbye').style.opacity=1;
+                    lbtn.style.display="none";
+                    rbtn.style.display="none";
+
+                }else{
+                    list.style.left = left+"px";
+                }
+            }
+            function showButton(index) {
+                for (var i = 0; i < buttons.length ; i++) {
+                    if( buttons[i].className == 'on'){
+                        buttons[i].className = '';
+                        break;
+                    }
+                }
+                buttons[index].className = 'on';
+            }
+            rbtn.onclick = function () {
+                index++;
+                if(index>2){
+                    alertReg.style.opacity = 1;
+                    alertReg.style.top = '50%';
+                    alertReg.style.zIndex = 100;
+                    index--;
+                    showButton(index);
+                    return;
+                }
+                animate(-600);
+                showButton(index);
+            }
+            lbtn.onclick = function () {
+                animate(600);
+                index==0?index=0:index--;
+                showButton(index);
+            }
+            for (var i = 0; i < buttons.length-1; i++) {
+                buttons[i].onclick = function () {
+                    if(this.className == 'on') {
+                        return;
+                    }
+                    var myIndex = parseInt(this.getAttribute('index'));
+                    var offset = -600 * (myIndex - index);
+                    animate(offset);
+                    index = myIndex;
+                    showButton(index);
+
+                }
+            }
+            buttons[3].onclick = function () {
+                var myIndex = 2 ;
+                var offset = -600 * (myIndex - index);
+                animate(offset);
+                index = myIndex;
+                showButton(index);
+                alertReg.style.opacity = 1;
+                alertReg.style.top = '50%';
+                alertReg.style.zIndex = 100;
+            }
+
+            reg.onclick = function(){
+                animate(-600);
+                index = 2;
+                showButton(index);
+            }
+            login.onclick = function(){
+                if(valiName()){
+                    return;
+                }else if(valiPwd()){
+                    return;
+                }else if(nextPwd()){
+                    return;
+                }else{
+                    showButton(index);
+                    animate(-1200);
+                    index = 3;
+                }
+            }
+            function vali(txt,reg){
+              if(reg.test(txt.value)){
+                return true;
+              }else{//否则
+                return false;
+              }
+            }
+            function valiName(){
+                if(!vali(input[0],/^\w{1,10}$/)){
+                    input[0].nextElementSibling.style.display ="block";
+                    return true;
+                }else{
+                    return false;
+                }
+            }
+            function valiPwd(){
+                if(!vali(input[1],/^\d{6}$/)){
+                    input[1].nextElementSibling.style.display ="block";
+                    return true;
+                }else{
+                    return false;
+                }
+            }
+            function nextPwd(){
+                if(!(input[2].value==input[1].value)){
+                    input[2].nextElementSibling.style.display ="block";
+                    return true;
+                }else{
+                    return false;
+                }
+            }
+        }
+
+        function getFocus(txt){
+            txt.nextElementSibling.style.display ="none";
+        }
+        function times(span){
+            span.parentElement.parentElement.style.opacity = 0;
+            span.parentElement.parentElement.style.zIndex = -1;
+            span.parentElement.parentElement.style.top = '40%';
+        }
+
+    </script>
+    </body>
+</html>
